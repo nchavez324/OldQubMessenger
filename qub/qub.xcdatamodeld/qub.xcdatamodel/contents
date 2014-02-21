@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12C54" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ContactStatus" representedClassName="ContactStatus" syncable="YES">
+        <attribute name="status" attributeType="String" minValueString="4" maxValueString="4" defaultValueString="1REQ" regularExpressionString="^(1REQ|2REQ|CONF)$" syncable="YES"/>
+        <attribute name="user_id" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="username" attributeType="String" minValueString="3" maxValueString="15" defaultValueString="unknown" syncable="YES"/>
+        <relationship name="owner" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="contacts" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="ImageCollection" representedClassName="ImageCollection" syncable="YES">
+        <attribute name="cover_photo" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="profile_pic_1" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="profile_pic_2" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="profile_pic_3" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="profile_pic_4" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="profile_pic_5" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="imageCollection" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" minValueString="0" maxValueString="100" syncable="YES"/>
+        <attribute name="dataCompletion" attributeType="Integer 16" minValueString="0" maxValueString="3" defaultValueString="0" syncable="YES"/>
+        <attribute name="fromUserID" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="hasImageContent" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="imageContent" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="status" attributeType="String" minValueString="1" maxValueString="1" defaultValueString="N" regularExpressionString="^(N|S|D|R)$" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Float" minValueString="0" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="toUserID" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="age" attributeType="Integer 16" minValueString="13" maxValueString="120" defaultValueString="13" syncable="YES"/>
+        <attribute name="age_visible" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="dataCompletion" attributeType="Integer 16" minValueString="0" maxValueString="3" defaultValueString="0" syncable="YES"/>
+        <attribute name="image_collection_id" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="location" attributeType="String" minValueString="2" maxValueString="20" defaultValueString="Unknown" syncable="YES"/>
+        <attribute name="location_visible" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" attributeType="String" minValueString="2" maxValueString="35" defaultValueString="Unknown" syncable="YES"/>
+        <attribute name="name_visible" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="num_profile_pics" attributeType="Integer 16" minValueString="0" maxValueString="5" defaultValueString="0" syncable="YES"/>
+        <attribute name="password_hash" attributeType="String" minValueString="1" maxValueString="100" defaultValueString="novalue" syncable="YES"/>
+        <attribute name="seeking" attributeType="String" minValueString="1" maxValueString="1" defaultValueString="F" regularExpressionString="^(M|F|O)$" syncable="YES"/>
+        <attribute name="seeking_visible" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="selected_image" attributeType="Integer 16" minValueString="0" maxValueString="5" defaultValueString="0" syncable="YES"/>
+        <attribute name="sex" attributeType="String" minValueString="1" maxValueString="1" defaultValueString="M" regularExpressionString="^(M|F|O)$" syncable="YES"/>
+        <attribute name="sex_visible" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="user_id" attributeType="Integer 64" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="username" attributeType="String" minValueString="3" maxValueString="15" defaultValueString="unknown" syncable="YES"/>
+        <attribute name="username_visible" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <relationship name="contacts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContactStatus" inverseName="owner" inverseEntity="ContactStatus" syncable="YES"/>
+        <relationship name="imageCollection" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ImageCollection" inverseName="user" inverseEntity="ImageCollection" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ContactStatus" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="ImageCollection" positionX="216" positionY="-48" width="128" height="150"/>
+        <element name="Message" positionX="45" positionY="36" width="128" height="165"/>
+        <element name="User" positionX="403" positionY="-9" width="128" height="345"/>
+    </elements>
+</model>

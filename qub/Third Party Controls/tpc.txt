@@ -1,0 +1,10 @@
+Explanation for each Third Party Component:
+
+AFNetworking:       Connecting to REST API for getting, posting and deleting user information.
+FlatUIKit:          Fundamental graphic theme that presents solid colors and transparency favoribly.
+iCarousel:          Used to provide intuitive interface for selecting pictures user has.
+JFCommon:           Used to sign REST API requests by way of its implementation of the Blowfish hash.
+MMDrawerController: Provides sidebars to see user's own profile and converser's profile.
+SSSevenSwitch:      Default boolean switch because of its "flatness".
+StackBlur:          Blurs background images.
+YFJLTableView:      Slide cell to reveal functionality like delete, etc.
