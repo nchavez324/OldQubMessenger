@@ -209,6 +209,11 @@
 		01C9FC4F17D25CBF00ACA991 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C9FC4517D25CBF00ACA991 /* Icon@2x.png */; };
 		01C9FC5017D25CBF00ACA991 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C9FC4617D25CBF00ACA991 /* iTunesArtwork.png */; };
 		01C9FC5117D25CBF00ACA991 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C9FC4717D25CBF00ACA991 /* iTunesArtwork@2x.png */; };
+		01CC840018B8072700233E09 /* contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 01CC83FB18B8072700233E09 /* contacts.png */; };
+		01CC840118B8072700233E09 /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 01CC83FC18B8072700233E09 /* contact.png */; };
+		01CC840218B8072700233E09 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 01CC83FD18B8072700233E09 /* profile.png */; };
+		01CC840318B8072700233E09 /* convos.png in Resources */ = {isa = PBXBuildFile; fileRef = 01CC83FE18B8072700233E09 /* convos.png */; };
+		01CC840418B8072700233E09 /* edit_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 01CC83FF18B8072700233E09 /* edit_profile.png */; };
 		01D93F94188827B1009B3AE9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D93F93188827B1009B3AE9 /* SystemConfiguration.framework */; };
 		01D93F96188827EB009B3AE9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D93F95188827EB009B3AE9 /* Security.framework */; };
 		01D93FBF18882A1A009B3AE9 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D93F9B18882A1A009B3AE9 /* AFHTTPRequestOperation.m */; };
@@ -522,6 +527,11 @@
 		01C9FC4517D25CBF00ACA991 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "qub/Icon@2x.png"; sourceTree = "<group>"; };
 		01C9FC4617D25CBF00ACA991 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = qub/iTunesArtwork.png; sourceTree = "<group>"; };
 		01C9FC4717D25CBF00ACA991 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "qub/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		01CC83FB18B8072700233E09 /* contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contacts.png; sourceTree = "<group>"; };
+		01CC83FC18B8072700233E09 /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
+		01CC83FD18B8072700233E09 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		01CC83FE18B8072700233E09 /* convos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = convos.png; sourceTree = "<group>"; };
+		01CC83FF18B8072700233E09 /* edit_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit_profile.png; sourceTree = "<group>"; };
 		01D93F93188827B1009B3AE9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		01D93F95188827EB009B3AE9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		01D93F9A18882A1A009B3AE9 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -692,6 +702,7 @@
 		014FCB181778FFB5005F9208 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				01CC83FA18B8072700233E09 /* Screenshots */,
 				01A6C040179099AA00A7E484 /* Localizable.strings */,
 				014FCB191778FFB5005F9208 /* qub-Info.plist */,
 				014FCB1A1778FFB5005F9208 /* InfoPlist.strings */,
@@ -1218,6 +1229,18 @@
 			name = AppIcons;
 			sourceTree = "<group>";
 		};
+		01CC83FA18B8072700233E09 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				01CC83FB18B8072700233E09 /* contacts.png */,
+				01CC83FC18B8072700233E09 /* contact.png */,
+				01CC83FD18B8072700233E09 /* profile.png */,
+				01CC83FE18B8072700233E09 /* convos.png */,
+				01CC83FF18B8072700233E09 /* edit_profile.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		01D93F9718882A1A009B3AE9 /* AFNetworking-2.0.3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1379,13 +1402,16 @@
 				01B53BEC177E2F640009C144 /* contactsSelectedIcon@2x.png in Resources */,
 				01B53BED177E2F640009C144 /* contactsUnselectedIcon.png in Resources */,
 				01B16A2E18870E7A00B07FCE /* input-field-cover.png in Resources */,
+				01CC840218B8072700233E09 /* profile.png in Resources */,
 				01B53BEE177E2F640009C144 /* contactsUnselectedIcon@2x.png in Resources */,
 				01B53BEF177E2F640009C144 /* convosSelectedIcon.png in Resources */,
 				01B16A3618870E7A00B07FCE /* input-bar-flat.png in Resources */,
+				01CC840418B8072700233E09 /* edit_profile.png in Resources */,
 				01B53BF0177E2F640009C144 /* convosSelectedIcon@2x.png in Resources */,
 				01B53BF1177E2F640009C144 /* convosUnselectedIcon.png in Resources */,
 				01B16A2218870E7A00B07FCE /* bubble-min.png in Resources */,
 				01B16A2F18870E7A00B07FCE /* input-field-cover@2x.png in Resources */,
+				01CC840118B8072700233E09 /* contact.png in Resources */,
 				01B53BF2177E2F640009C144 /* convosUnselectedIcon@2x.png in Resources */,
 				01B53BF3177E2F640009C144 /* profileIcon.png in Resources */,
 				01EF7A28187F2E2200EBEDBF /* Default-568h-6.png in Resources */,
@@ -1432,6 +1458,7 @@
 				01A6C03E179099AA00A7E484 /* Localizable.strings in Resources */,
 				01FA69C71790B30B006FBCD5 /* RIPChangePasswordViewController.xib in Resources */,
 				01EF7A2D187F314400EBEDBF /* Icon-40@2x.png in Resources */,
+				01CC840318B8072700233E09 /* convos.png in Resources */,
 				011E82B01791A010003B190C /* defaultCover0.jpg in Resources */,
 				0197EC1917A6F4AB00A1FA50 /* README in Resources */,
 				017784FD17BB281C00196265 /* tpc.txt in Resources */,
@@ -1483,6 +1510,7 @@
 				01C9FC4E17D25CBF00ACA991 /* Icon.png in Resources */,
 				01C9FC4F17D25CBF00ACA991 /* Icon@2x.png in Resources */,
 				01C9FC5017D25CBF00ACA991 /* iTunesArtwork.png in Resources */,
+				01CC840018B8072700233E09 /* contacts.png in Resources */,
 				01C9FC5117D25CBF00ACA991 /* iTunesArtwork@2x.png in Resources */,
 				01EF7A2E187F314400EBEDBF /* Icon-60@2x.png in Resources */,
 				01C7CEE417D5315E00E0AE97 /* Default.png in Resources */,
