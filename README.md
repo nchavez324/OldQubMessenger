@@ -29,16 +29,20 @@ Check out the server repo for more info about the API I wrote. I might come back
 bloated -- I do regret not commenting the code out enough. Also, it seems like there's still a lot of work to be put
 in.
 
+The project was done in XCode 4, then 5. It compiles for iOS 6.1 and 7.0.
+
 Screenshots
 ===========
 
+![Contacts Page](qub/Screenshots/contacts.png)
+![Contact Profile](qub/Screenshots/contact.png)
+![User Profile](qub/Screenshots/profile.png)
+![Edit Profile Page](qub/Screenshots/edit_profile.png)
+![Convos Page](qub/Screenshots/convos.png)
 
-
-
-===============================
-The project was done in XCode 4, then 5. It compiles for iOS 6.1 and 7.0.
 
 The MIT License (MIT) Copyright © 2014 Nick Chavez
+===============================
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
