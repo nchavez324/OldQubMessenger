@@ -32,11 +32,7 @@ in.
 Screenshots
 ===========
 
-![Contacts Page](qub/Screenshots/contacts.png)
-![Contact Profile](qub/Screenshots/contact.png)
-![User Profile](qub/Screenshots/profile.png)
-![Edit Profile Page](qub/Screenshots/edit_profile.png)
-![Convos Page](qub/Screenshots/convos.png)
+
 
 
 ===============================
