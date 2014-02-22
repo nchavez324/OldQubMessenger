@@ -23,7 +23,7 @@ books open and learned about how to program in Objective-C, the iOS visual parad
 The application relies heavily on multi-threaded Core Data, which I wrote completely. It also depends on AFNetworking
  for communication with a server through JSON. I learned quite a lot about encryption and did my own service using
 Blowfish public/private key encryption on the device and on the server. I learned all of thits plus all the basic
-iOS stuff.
+iOS stuff. Some visual effects I found on Github in lieu of spending time to write them myself -- I wanted to focus more on the more interesting stuff.
 
 Check out the server repo for more info about the API I wrote. I might come back to this, but the project seems so
 bloated -- I do regret not commenting the code out enough. Also, it seems like there's still a lot of work to be put
