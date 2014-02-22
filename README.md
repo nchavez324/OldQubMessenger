@@ -33,17 +33,17 @@ The project was done in XCode 4, then 5. It compiles for iOS 6.1 and 7.0.
 
 Screenshots
 ===========
-<p>
+<br/>
 ![Contacts Page](qub/Screenshots/img_contacts.png)
-</p><p>
+<br/>
 ![Contact Profile](qub/Screenshots/img_contact.png)
-</p><p>
+<br/>
 ![User Profile](qub/Screenshots/img_profile.png)
-</p><p>
+<br/>
 ![Edit Profile Page](qub/Screenshots/img_edit_profile.png)
-</p><p>
+<br/>
 ![Convos Page](qub/Screenshots/img_convos.png)
-</p>
+
 
 The MIT License (MIT) Copyright © 2014 Nick Chavez
 ===============================
